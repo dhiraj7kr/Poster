@@ -3,30 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Startup Funding Posters</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <title>Startup Poster Creator</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Startup Poster Generator</h1>
-    <form id="postForm">
-      <div><label>Company Logo</label><input type="file" id="logo" accept="image/*" required></div>
-      <div><label>Company Name</label><input type="text" id="companyName"></div>
-      <div><label>What They Do</label><textarea id="description"></textarea></div>
-      <div><label>Market / Industry</label><input type="text" id="market"></div>
-      <div><label>Headquarters</label><input type="text" id="hq"></div>
-      <div><label>Employees</label><input type="text" id="employees"></div>
-      <div><label>Investor</label><input type="text" id="investor"></div>
-      <div><label>Funding Amount</label><input type="text" id="amount"></div>
-      <div><label>Funding Round</label><input type="text" id="round"></div>
-      <div><label>Valuation</label><input type="text" id="valuation"></div>
-      <button type="submit">Generate Posters</button>
+  <main class="wrapper">
+    <h1>🚀 Create Your Startup Poster</h1>
+    <form id="startupForm">
+      <label><span>📷 Logo</span><input type="file" id="logoInput" accept="image/*" /></label>
+      <label><span>🏢 Company</span><input type="text" id="companyInput" /></label>
+      <label><span>📝 Description</span><textarea id="descInput"></textarea></label>
+      <label><span>🌍 Market</span><input type="text" id="marketInput" /></label>
+      <label><span>📍 HQ</span><input type="text" id="hqInput" /></label>
+      <label><span>👥 Employees</span><input type="text" id="employeesInput" /></label>
+      <label><span>💸 Investor</span><input type="text" id="investorInput" /></label>
+      <label><span>💵 Amount</span><input type="text" id="amountInput" /></label>
+      <label><span>🔁 Round</span><input type="text" id="roundInput" /></label>
+      <label><span>📊 Valuation</span><input type="text" id="valuationInput" /></label>
+      <button type="submit">🎨 Generate Poster</button>
     </form>
 
-    <div class="post-container" id="outputContainer"></div>
-  </div>
+    <section id="posterOutput" class="poster-section"></section>
+  </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
